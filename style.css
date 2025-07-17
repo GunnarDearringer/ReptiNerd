@@ -1,41 +1,23 @@
-/* ====== Base Styles ====== */
-body {
-  font-family: 'Poppins', sans-serif;
+/* Reset */
+* {
   margin: 0;
   padding: 0;
-  background-color: #f5f0e6;
-  color: #2d2d2d;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f4f1ec;
+  color: #2b2b2b;
   line-height: 1.6;
 }
 
-img {
-  max-width: 100%;
-  display: block;
-  border-radius: 10px;
-}
-
-a {
-  color: #d87f3e;
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-/* ====== Hero Section ====== */
+/* Hero */
 .hero {
+  background: linear-gradient(to right, #2f2f2f, #3f3f3f);
+  color: #fff;
+  padding: 5rem 2rem;
   text-align: center;
-  padding: 4rem 2rem;
-  background-color: #fff8ec;
-}
-
-.hero img {
-  width: 100%;
-  max-height: 400px;
-  object-fit: cover;
-  margin-bottom: 2rem;
-  border-radius: 12px;
 }
 
 .hero h1 {
@@ -43,45 +25,43 @@ a:hover {
   margin-bottom: 1rem;
 }
 
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
 .cta-button {
-  display: inline-block;
-  background-color: #d87f3e;
+  background: #d87f3e;
   color: white;
   padding: 0.75rem 1.5rem;
+  border-radius: 6px;
   font-weight: bold;
-  border-radius: 8px;
-  margin-top: 1rem;
-  transition: background-color 0.3s ease;
+  text-decoration: none;
+  transition: background 0.3s;
 }
 
 .cta-button:hover {
-  background-color: #c56f2e;
+  background: #c56926;
 }
 
-/* ====== Features Section ====== */
+/* Features */
 .features {
   display: flex;
   justify-content: space-around;
   padding: 3rem 2rem;
-  background-color: #ffffff;
+  background: #fff;
+  text-align: center;
   flex-wrap: wrap;
+  gap: 2rem;
 }
 
 .feature {
-  flex: 1;
-  min-width: 250px;
-  margin: 1rem;
-  text-align: center;
+  max-width: 300px;
 }
 
-.feature h3 {
-  font-size: 1.5rem;
-  margin-bottom: 0.5rem;
-}
-
-/* ====== Popular Types ====== */
-.popular-types {
-  padding: 3rem 2rem;
+/* Cards */
+.popular {
+  padding: 4rem 2rem;
   background-color: #fdf9f3;
   text-align: center;
 }
@@ -89,18 +69,17 @@ a:hover {
 .card-grid {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
   gap: 2rem;
+  flex-wrap: wrap;
   margin-top: 2rem;
 }
 
 .card {
-  background-color: white;
+  background: white;
   border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
-  padding: 1rem;
+  box-shadow: 0 0 10px rgba(0,0,0,0.08);
+  padding: 1.5rem;
   width: 280px;
-  text-align: center;
   transition: transform 0.3s ease;
 }
 
@@ -108,31 +87,33 @@ a:hover {
   transform: translateY(-5px);
 }
 
-.card h3 {
-  margin-top: 1rem;
-  font-size: 1.3rem;
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 1rem;
 }
 
-/* ====== Latest Articles ====== */
-.latest-articles {
-  padding: 3rem 2rem;
-  background-color: #fff;
+.card h4 {
+  margin-bottom: 0.5rem;
 }
 
-.latest-articles h2 {
+/* Blog Preview */
+.blog-preview {
+  padding: 4rem 2rem;
+  background: #fff;
   text-align: center;
-  margin-bottom: 2rem;
 }
 
-.latest-articles article {
+.blog-preview article {
   max-width: 600px;
   margin: 0 auto;
-  text-align: center;
 }
 
-/* ====== Footer ====== */
+/* Footer */
 footer {
-  background-color: #2d2d2d;
+  background: #2b2b2b;
   color: white;
   padding: 2rem;
   text-align: center;
@@ -145,7 +126,8 @@ footer nav {
 footer nav a {
   margin: 0 1rem;
   color: #d87f3e;
-  font-weight: 500;
+  text-decoration: none;
+  font-weight: bold;
 }
 
 footer p {
