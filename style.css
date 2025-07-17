@@ -1,0 +1,154 @@
+/* ====== Base Styles ====== */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f0e6;
+  color: #2d2d2d;
+  line-height: 1.6;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  border-radius: 10px;
+}
+
+a {
+  color: #d87f3e;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* ====== Hero Section ====== */
+.hero {
+  text-align: center;
+  padding: 4rem 2rem;
+  background-color: #fff8ec;
+}
+
+.hero img {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  margin-bottom: 2rem;
+  border-radius: 12px;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: #d87f3e;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  font-weight: bold;
+  border-radius: 8px;
+  margin-top: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #c56f2e;
+}
+
+/* ====== Features Section ====== */
+.features {
+  display: flex;
+  justify-content: space-around;
+  padding: 3rem 2rem;
+  background-color: #ffffff;
+  flex-wrap: wrap;
+}
+
+.feature {
+  flex: 1;
+  min-width: 250px;
+  margin: 1rem;
+  text-align: center;
+}
+
+.feature h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+/* ====== Popular Types ====== */
+.popular-types {
+  padding: 3rem 2rem;
+  background-color: #fdf9f3;
+  text-align: center;
+}
+
+.card-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.card {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  padding: 1rem;
+  width: 280px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card h3 {
+  margin-top: 1rem;
+  font-size: 1.3rem;
+}
+
+/* ====== Latest Articles ====== */
+.latest-articles {
+  padding: 3rem 2rem;
+  background-color: #fff;
+}
+
+.latest-articles h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.latest-articles article {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* ====== Footer ====== */
+footer {
+  background-color: #2d2d2d;
+  color: white;
+  padding: 2rem;
+  text-align: center;
+}
+
+footer nav {
+  margin-bottom: 1rem;
+}
+
+footer nav a {
+  margin: 0 1rem;
+  color: #d87f3e;
+  font-weight: 500;
+}
+
+footer p {
+  font-size: 0.9rem;
+  color: #ccc;
+}
